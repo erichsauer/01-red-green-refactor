@@ -9,9 +9,9 @@ describe('copyAndPush function', () => {
     expect(result).toEqual(['beep', 'boop', 'bleep', 'goop']);
   });
 
-  // it('should copy a passed-in array and push 4 to the end, returning the new array', () => {
-  //   const push = 4;
-  //   const result = copyAndPush(array, push);
-  //   expect(result).toEqual(['beep', 'boop', 'bleep', 4]);
-  // });
+  it('should copy a passed-in array and push 4 to the end, returning the new array', () => {
+    const push = 4;
+    const result = copyAndPush(array, push);
+    expect(result).toEqual(['beep', 'boop', 'bleep', 4]);
+  });
 });
