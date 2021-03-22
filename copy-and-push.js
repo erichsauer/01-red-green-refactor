@@ -1,7 +1,6 @@
 const copyAndPush = (array, toPush) => {
-  // const result = array.slice();
-  const result = array;
-  array.push(toPush);
+  const result = [...array];
+  result.push(toPush);
   return result;
 };
 
