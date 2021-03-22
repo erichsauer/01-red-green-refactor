@@ -1,10 +1,7 @@
 const capitalizeAndFilter = (array, filterBy) => {
-  const result = [];
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if (element.charAt(0) === filterBy) return result;
-    result.push(element.toUpperCase());
-  }
+  const result = array
+    .filter((element) => element.charAt(0) !== filterBy)
+    .map((element) => element.toUpperCase());
   return result;
 };
 
